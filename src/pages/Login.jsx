@@ -39,7 +39,7 @@ function Login() {
               onChange={(e)=>{setPassword(e.target.value)}}
               type="password" className='w-full rounded-lg border border-gray-300 py-2' />
             </label>
-              <button type='submit' className=" w-full mt-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg">Log In</button>
+              <button type='submit' className=" w-full mt-2 px-4 py-2 bg-green-600 text-white font-medium rounded-lg">Log In</button>
             
          </form>
       </div>

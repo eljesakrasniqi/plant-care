@@ -2,9 +2,66 @@
   "users": [
     {
       "fullName": "eljesa",
-      "email": "eljesa@gmail.com",
-      "password": "eljesa123",
-      "id": "hEtGg-c0sx4"
+      "email": "eljesak@gmail.com",
+      "password": "1234eljesa",
+      "id": "PG79IRqcOSU"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eekk@gmail.com",
+      "password": "1234eek",
+      "id": "D071vmiNhIQ"
+    }
+  ],
+  "plants": [
+    {
+      "id": "1",
+      "name": "Monstera Deliciosa",
+      "watered": "7 days ago",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    },
+    {
+      "id": "2",
+      "name": "Monstera Deliciosa",
+      "watered": "7 days ago",
+      "needWater": "needs-water",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    },
+    {
+      "id": "3",
+      "name": "Monstera Deliciosa",
+      "watered": "7 days ago",
+      "next": "tomorrow",
+      "status": "not healthy",
+      "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    },
+    {
+      "id": "4",
+      "name": "Monstera Deliciosa",
+      "watered": "7 days ago",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -13,6 +13,8 @@ import Register from './pages/Register';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { Features } from 'tailwindcss';
+import Details from './pages/Details';
+import Calendar from './pages/Calendar';
 
 function App() {
   return (
@@ -24,11 +26,14 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/my-plants" element={<MyPlants />} />
+        <Route path="/add-plant" element={<AddPlant />} />
         <Route path="/my-plants/add" element={<AddPlant />} />
-        <Route path="/my-plants/:id" element={<PlantDetail />} />
+        <Route path="/my-plants/:id" element={<Details />} />
+        <Route path="/my-plants" element={<MyPlants />} />
         <Route path="/care-guide" element={<CareGuide />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </>
   )

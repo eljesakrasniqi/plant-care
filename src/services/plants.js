@@ -23,3 +23,8 @@ export function addPlant(plant) {
         return response.json()
     })
 }
+export function deletePlant(id) {
+  return fetch(`${baseUrl}/plants/${id}`, {
+    method: "DELETE",
+  });
+}

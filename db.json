@@ -17,6 +17,24 @@
       "email": "eljesa2k@gmail.com",
       "password": "123445",
       "id": "AUxlAhOwxFk"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "jbM370TESsQ"
+    },
+    {
+      "fullName": "elj",
+      "email": "eljesakkk@gmail.com",
+      "password": "eljesa123",
+      "id": "Nu9Sr71iOBE"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "_6d0uzHllDc"
     }
   ],
   "plants": [
@@ -30,7 +48,9 @@
       "type": "Houseplant",
       "location": "Living room",
       "frequency": "Everyday",
-      "sunlight": "Bright, indirect"
+      "sunlight": "Bright, indirect",
+      "wateringFrequency": "",
+      "notes": ""
     },
     {
       "id": "2",
@@ -68,6 +88,51 @@
       "location": "Living room",
       "frequency": "Everyday",
       "sunlight": "Bright, indirect"
+    },
+    {
+      "name": "test",
+      "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Succulent",
+      "location": "Bedroom",
+      "frequency": "Everyday",
+      "sunlight": "Full sun",
+      "notes": "test test",
+      "watered": "Today",
+      "next": "Tomorrow",
+      "status": "healthy",
+      "id": "pNnw0JcBHAE"
+    }
+  ],
+  "events": [
+    {
+      "title": "test",
+      "date": "2026-06-11",
+      "id": "ExFDvjumlfY"
+    },
+    {
+      "title": "test2",
+      "date": "2026-06-12",
+      "id": "U8yiGNWJhkE"
+    },
+    {
+      "title": "test",
+      "date": "2026-06-11",
+      "id": "Jlu2mqA8BS0"
+    },
+    {
+      "title": "test",
+      "date": "2026-06-15T03:00:00+02:00",
+      "id": "B8JNE-gnCMo"
+    },
+    {
+      "title": "test",
+      "date": "2026-06-08",
+      "id": "1hvtoVdxEQo"
+    },
+    {
+      "title": "water plant",
+      "date": "2026-06-15T06:00:00+02:00",
+      "id": "Jn7eTTadVTk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

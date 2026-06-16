@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import Sidebar from "../components/Sidebar";
+import { addEvent, getEvents } from "../services/events";
 
 function Calendar() {
+  const [events, setEvents] = useState([]);
+  useEffect(() => {
+    getEvents().then((data) => {
+      setEvents(data);
+    });
+  }, []);
+  const handleDateClick = (info) => {
+    const title = prompt("Event title?");
+    if (!title) return;
+
+    const newEvent = {
+      title,
+      date: info.dateStr,
+    };
+
+    addEvent(newEvent).then((saved) => {
+      setEvents((prev) => [...prev, saved]);
+    });
+  };
+
   return (
     <div className="flex min-h-screen bg-gray-50">
       <Sidebar />
@@ -21,41 +42,17 @@ function Calendar() {
 
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <FullCalendar
-            plugins={[
-              dayGridPlugin,
-              timeGridPlugin,
-              interactionPlugin,
-            ]}
+            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             initialView="dayGridMonth"
             height="auto"
+            selectable={true}
+            dateClick={handleDateClick}
             headerToolbar={{
               left: "prev,next",
               center: "title",
               right: "dayGridMonth,timeGridWeek,listMonth",
             }}
-            buttonText={{
-              dayGridMonth: "Month",
-              timeGridWeek: "Week",
-              listMonth: "List",
-            }}
-            events={[
-              {
-                title: "Water Monstera",
-                date: "2024-05-01",
-              },
-              {
-                title: "Water Peace Lily",
-                date: "2024-05-10",
-              },
-              {
-                title: "Water Fiddle Leaf Fig",
-                date: "2024-05-23",
-              },
-              {
-                title: "Repot Aloe Vera",
-                date: "2024-06-15",
-              },
-            ]}
+            events={events}
           />
         </div>
       </main>

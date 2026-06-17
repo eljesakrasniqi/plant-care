@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { registerUser } from '../services/auth';
 import registerImg from '../assets/registerImg.png'
 
@@ -84,6 +85,16 @@ function Register() {
               >
                 {loading ? "Registering..." : "Register"}
               </button>
+              
+              <p className="text-center text-gray-600 text-sm">
+                Already have an account?{" "}
+                <Link
+                  to="/login"
+                  className="text-[#1C9426] font-semibold hover:underline"
+                >
+                  Log in
+                </Link>
+              </p>
             </form>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">

@@ -44,9 +44,6 @@ function Navbar() {
                             <NavLink to="/properties" className='font-medium'>How It Works</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" className='font-medium'>About </NavLink>
-                        </li>
-                        <li>
                             <NavLink to="/contact" className='font-medium'>Contact </NavLink>
                         </li>
                     </ul>

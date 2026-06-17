@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../components/Sidebar";
 import { getAllPlants } from "../services/plants";
+import { getUser } from '../services/auth'
 
 function Dashboard() {
+  const user = getUser();
   const [plants, setPlants] = useState([]);
 
   useEffect(() => {
@@ -12,6 +14,13 @@ function Dashboard() {
   const needWater = plants.filter((p) => p.status === "needs-water").length;
   const healthy = plants.filter((p) => p.status === "healthy").length;
   const reports = plants.filter((p) => p.status === "warning").length;
+  // if (!user) {
+  //   return (
+  //     <main>
+  //       <p>Login first to visit your dashboard</p>
+  //     </main>
+  //   )
+  // }
 
   return (
     <div className="flex min-h-screen">
@@ -53,7 +62,7 @@ function Dashboard() {
               {healthy}
             </h2>
             <p className="text-xs text-gray-400 mt-2">
-              Everything is fine 
+              Everything is fine
             </p>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-sm border">
@@ -65,6 +74,65 @@ function Dashboard() {
               Issues detected
             </p>
           </div>
+        </div>
+
+
+        <div className="mt-10 bg-white rounded-2xl shadow-sm border p-6">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-xl font-semibold text-gray-800">
+              Recent Plants
+            </h2>
+            <span className="text-sm text-gray-500">
+              {plants.length} plants
+            </span>
+          </div>
+
+          {plants.length === 0 ? (
+            <p className="text-gray-500 text-center py-8">
+              No plants added yet.
+            </p>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b">
+                    <th className="text-left py-3 text-gray-600">Plant</th>
+                    <th className="text-left py-3 text-gray-600">Type</th>
+                    <th className="text-left py-3 text-gray-600">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {plants.slice(0, 3).map((plant) => (
+                    <tr
+                      key={plant.id}
+                      className="border-b last:border-b-0 hover:bg-gray-50"
+                    >
+                      <td className="py-4 font-medium">
+                        {plant.name}
+                      </td>
+
+                      <td className="py-4 text-gray-600">
+                        {plant.type}
+                      </td>
+
+                      <td className="py-4">
+                        <span
+                          className={`px-3 py-1 rounded-full text-xs font-medium ${plant.status === "healthy"
+                            ? "bg-green-100 text-green-700"
+                            : plant.status === "needs-water"
+                              ? "bg-yellow-100 text-yellow-700"
+                              : "bg-red-100 text-red-700"
+                            }`}
+                        >
+                          {plant.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       </main>
     </div>

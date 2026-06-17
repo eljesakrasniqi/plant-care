@@ -23,6 +23,14 @@ export function loginUser(email, password) {
             return user;
         });
 }
+export function getUser() {
+    const currentUser = localStorage.getItem("user");
+    if (!currentUser || currentUser === "undifined") {
+        localStorage.removeItem("user");
+        return null;
+    }
+    return JSON.parse(currentUser)
+}
 
 export function logOut() {
     localStorage.removeItem("userId")

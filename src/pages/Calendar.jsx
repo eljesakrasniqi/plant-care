@@ -14,7 +14,7 @@ function Calendar() {
     });
   }, []);
   const handleDateClick = (info) => {
-    const title = prompt("Event title?");
+    const title = prompt("Write your event title?");
     if (!title) return;
 
     const newEvent = {

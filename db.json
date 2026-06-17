@@ -35,6 +35,30 @@
       "email": "eljesak@gmail.com",
       "password": "eljesa123",
       "id": "_6d0uzHllDc"
+    },
+    {
+      "fullName": "eljesak",
+      "email": "eljesa2kr@gmail.com",
+      "password": "eljesa123",
+      "id": "9izR3rx7mwo"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesa@gmail.com",
+      "password": "eljesa123",
+      "id": "7iqBhzGREe0"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "kdtnt3a2KJ4"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "k@gmail.com",
+      "password": "eljesa1234",
+      "id": "mSZglsPafOU"
     }
   ],
   "plants": [
@@ -54,7 +78,7 @@
     },
     {
       "id": "2",
-      "name": "Monstera Deliciosa",
+      "name": "Peace Lilly",
       "watered": "7 days ago",
       "needWater": "needs-water",
       "next": "tomorrow",
@@ -66,11 +90,12 @@
       "sunlight": "Bright, indirect"
     },
     {
-      "id": "3",
-      "name": "Monstera Deliciosa",
+      "id": "2",
+      "name": "Ruber Plant",
       "watered": "7 days ago",
+      "needWater": "needs-water",
       "next": "tomorrow",
-      "status": "not healthy",
+      "status": "healthy",
       "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "type": "Houseplant",
       "location": "Living room",
@@ -79,7 +104,7 @@
     },
     {
       "id": "4",
-      "name": "Monstera Deliciosa",
+      "name": "Aloe Vera",
       "watered": "7 days ago",
       "next": "tomorrow",
       "status": "healthy",
@@ -88,52 +113,8 @@
       "location": "Living room",
       "frequency": "Everyday",
       "sunlight": "Bright, indirect"
-    },
-    {
-      "name": "test",
-      "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "type": "Succulent",
-      "location": "Bedroom",
-      "frequency": "Everyday",
-      "sunlight": "Full sun",
-      "notes": "test test",
-      "watered": "Today",
-      "next": "Tomorrow",
-      "status": "healthy",
-      "id": "pNnw0JcBHAE"
     }
   ],
-  "events": [
-    {
-      "title": "test",
-      "date": "2026-06-11",
-      "id": "ExFDvjumlfY"
-    },
-    {
-      "title": "test2",
-      "date": "2026-06-12",
-      "id": "U8yiGNWJhkE"
-    },
-    {
-      "title": "test",
-      "date": "2026-06-11",
-      "id": "Jlu2mqA8BS0"
-    },
-    {
-      "title": "test",
-      "date": "2026-06-15T03:00:00+02:00",
-      "id": "B8JNE-gnCMo"
-    },
-    {
-      "title": "test",
-      "date": "2026-06-08",
-      "id": "1hvtoVdxEQo"
-    },
-    {
-      "title": "water plant",
-      "date": "2026-06-15T06:00:00+02:00",
-      "id": "Jn7eTTadVTk"
-    }
-  ],
+  "events": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

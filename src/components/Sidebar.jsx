@@ -37,22 +37,14 @@ function Sidebar() {
               My Plants
             </NavLink>
           </li>
-
-          <li>
-            <NavLink to="/calendar" className={activeLink}>
-              Calendar
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink to="/reminders" className={activeLink}>
-              Reminders
-            </NavLink>
-          </li>
-
           <li>
             <NavLink to="/care-guide" className={activeLink}>
               Care Guide
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/calendar" className={activeLink}>
+              Calendar
             </NavLink>
           </li>
         </ul>

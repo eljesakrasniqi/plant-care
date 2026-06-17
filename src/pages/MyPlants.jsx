@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllPlants } from "../services/plants";
+import { getAllPlants, deletePlant } from "../services/plants";
 import Sidebar from "../components/Sidebar";
 import PlantRow from "../components/PlantRow";
 
@@ -19,6 +19,13 @@ function MyPlants() {
         setLoading(false);
       });
   }, []);
+  const handleDelete = (id) => {
+    deletePlant(id)
+      .then(() => {
+        setPlants((prev) => prev.filter((p) => p.id !== id));
+      })
+      .catch((err) => console.log("Error:", err));
+  };
 
   return (
     <div className="flex min-h-screen">
@@ -38,13 +45,6 @@ function MyPlants() {
             + Add Plant
           </button>
         </div>
-        {/* <div className="mb-4">
-          <input
-            type="text"
-            placeholder="Search plants..."
-            className="w-full md:w-80 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-          />
-        </div> */}
 
         {loading && <p className="text-gray-600">Loading...</p>}
         {error && (
@@ -70,13 +70,12 @@ function MyPlants() {
                 {plants.length === 0 ? (
                   <tr>
                     <td colSpan="7" className="p-6 text-center text-gray-500">
-                       No plants found
+                      No plants found
                     </td>
                   </tr>
                 ) : (
                   plants.map((plant) => (
-                    <PlantRow key={plant.id} plant={plant} />
-                  ))
+                    <PlantRow key={plant.id} plant={plant} onDelete={handleDelete} />))
                 )}
               </tbody>
             </table>

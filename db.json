@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "1234eljesa",
+      "id": "PG79IRqcOSU"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eekk@gmail.com",
+      "password": "1234eek",
+      "id": "D071vmiNhIQ"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesa2k@gmail.com",
+      "password": "123445",
+      "id": "AUxlAhOwxFk"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "jbM370TESsQ"
+    },
+    {
+      "fullName": "elj",
+      "email": "eljesakkk@gmail.com",
+      "password": "eljesa123",
+      "id": "Nu9Sr71iOBE"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "_6d0uzHllDc"
+    },
+    {
+      "fullName": "eljesak",
+      "email": "eljesa2kr@gmail.com",
+      "password": "eljesa123",
+      "id": "9izR3rx7mwo"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesa@gmail.com",
+      "password": "eljesa123",
+      "id": "7iqBhzGREe0"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "eljesak@gmail.com",
+      "password": "eljesa123",
+      "id": "kdtnt3a2KJ4"
+    },
+    {
+      "fullName": "eljesa",
+      "email": "k@gmail.com",
+      "password": "eljesa1234",
+      "id": "mSZglsPafOU"
+    }
+  ],
+  "plants": [
+    {
+      "id": "1",
+      "name": "Monstera Deliciosa",
+      "watered": "7 days ago",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect",
+      "wateringFrequency": "",
+      "notes": ""
+    },
+    {
+      "id": "2",
+      "name": "Peace Lilly",
+      "watered": "7 days ago",
+      "needWater": "needs-water",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    },
+    {
+      "id": "2",
+      "name": "Ruber Plant",
+      "watered": "7 days ago",
+      "needWater": "needs-water",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    },
+    {
+      "id": "4",
+      "name": "Aloe Vera",
+      "watered": "7 days ago",
+      "next": "tomorrow",
+      "status": "healthy",
+      "image": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "type": "Houseplant",
+      "location": "Living room",
+      "frequency": "Everyday",
+      "sunlight": "Bright, indirect"
+    }
+  ],
+  "events": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
